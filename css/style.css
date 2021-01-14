@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+svg{
+  margin-top: 12px;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1170px;
+  height: 48px;
+  display: flex;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.padding{
+  padding: 0 15px;
+}
+
+.right-headbar, .left-headbar{
+  display: flex;
+  align-self: center;
+}
+
+.with-dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  border: 1px solid #000;
+  background: #fff;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+}
+
+.dropdown-menu.with-column{
+  flex-direction: row;
+}
+
+.dropdown-menu div{
+  width: 100px;
+}
+
+.active{
+  display: flex;
+}
